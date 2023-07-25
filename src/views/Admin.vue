@@ -304,6 +304,9 @@
             >
                 <v-col cols="12" sm="9" md="7" lg="5">
                     <div style="padding: 15px">
+                        <div class="pa-4 mb-5 text-center">
+                            <h4 class="text-h4 text-uppercase text-grey-darken-3">{{ $store.state.app.title }}</h4>
+                        </div>
                         <table class="table-winners" style="width: 100%">
                             <tbody>
                                 <template
