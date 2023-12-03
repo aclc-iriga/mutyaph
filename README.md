@@ -1,6 +1,6 @@
-# lmn
+# mutyaph
 
-Tabulation System for Little Miss Nabua
+Tabulation System for Mutya ng Pilipinas - Bicol
 
 ---
 ## Development Setup
@@ -14,15 +14,15 @@ Here are the steps to set up the development environment for this project:
 2. Start Apache and MySQL through XAMPP if not already running.
 
 3. Clone or download this repository to your XAMPP **htdocs** folder.
-   The final path should be `path_to/xampp/htdocs/lmn`.
+   The final path should be `path_to/xampp/htdocs/mutyaph`.
 
 4. Copy [**`app/config/database.example.php`**](app/config/database.example.php)
    to **`app/config/database.php`**, then modify the database connection settings in the new file.
 
 5. Inside [phpMyAdmin](http://localhost/phpmyadmin),
-   create a MySQL database named `lmn` and import [lmn.sql](lmn.sql) into it.
+   create a MySQL database named `mutyaph` and import [mutyaph.sql](mutyaph.sql) into it.
 
-6. Open the terminal and navigate to the project directory **lmn**.
+6. Open the terminal and navigate to the project directory **mutyaph**.
 
 7. Execute the following commands to install the required dependencies:
    ```sh
@@ -34,7 +34,7 @@ Here are the steps to set up the development environment for this project:
    npm run dev
    ```
 
-9. Open your web browser and access <http://localhost:5187/lmn/> to view the application.
+9. Open your web browser and access <http://localhost:5189/mutyaph/> to view the application.
 
 
 ---
@@ -49,7 +49,7 @@ Before getting started, ensure that you have [**Composer**](https://getcomposer.
    to **`tests/backend/config/test-database.php`**, then modify the database connection settings in the new file.
 
 2. Inside [phpMyAdmin](http://localhost/phpmyadmin),
-   create a MySQL database named `test-lmn` and import [lmn.sql](lmn.sql) into it.
+   create a MySQL database named `test-mutyaph` and import [mutyaph.sql](mutyaph.sql) into it.
 
 3. Run the following command to install the required dependencies.
    ```shell
@@ -92,15 +92,15 @@ Here's how to compile the project for production deployment:
    npm run build
    ```
 
-2. Access the application by visiting `http://[host_name]/lmn`,
+2. Access the application by visiting `http://[host_name]/mutyaph`,
    where `host_name` is the **IP address** or **host name** of the server in the network.
    For example:
-     - <http://localhost/lmn>
-     - <http://192.168.1.99/lmn>
+     - <http://localhost/mutyaph>
+     - <http://192.168.1.99/mutyaph>
 
 
 #### Admin Dashboard
-Access the **admin dashboard** at <http://localhost/lmn/app>.
+Access the **admin dashboard** at <http://localhost/mutyaph/app>.
 The default ***username*** and ***password*** is `admin`.
 
 #### Printing Results
