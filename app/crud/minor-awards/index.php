@@ -36,7 +36,7 @@
 </head>
 <body>
     <div class="container py-5">
-        <h2 class="fw-bolder">Little Miss Nabua 2023</h2>
+        <h2 class="fw-bolder">Mutya ng Pilipinas - Bicol 2023</h2>
     </div>
     <div>
         <table>
