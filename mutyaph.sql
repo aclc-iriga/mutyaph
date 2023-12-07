@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 03, 2023 at 03:06 PM
+-- Generation Time: Dec 07, 2023 at 07:55 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -221,7 +221,11 @@ INSERT INTO `judges` (`id`, `number`, `name`, `avatar`, `username`, `password`, 
 (2, 102, 'Online Voting', 'no-avatar.jpg', 'pre01', 'pre01', NULL, NULL, NULL, '2023-04-06 13:58:28', '2023-12-03 13:49:24'),
 (3, 1, 'Judge 01', 'no-avatar.jpg', 'pageant01', 'pageant01', NULL, NULL, NULL, '2023-04-06 13:58:42', '2023-12-03 13:49:27'),
 (4, 2, 'Judge 02', 'no-avatar.jpg', 'pageant02', 'pageant02', NULL, NULL, NULL, '2023-12-03 07:26:34', '2023-12-03 08:31:50'),
-(5, 3, 'Judge 03', 'no-avatar.jpg', 'pageant03', 'pageant03', NULL, NULL, NULL, '2023-12-03 07:27:07', '2023-12-03 13:49:40');
+(5, 3, 'Judge 03', 'no-avatar.jpg', 'pageant03', 'pageant03', NULL, NULL, NULL, '2023-12-03 07:27:07', '2023-12-03 13:49:40'),
+(6, 4, 'Judge 04', 'no-avatar.jpg', 'pageant04', 'pageant04', NULL, NULL, NULL, '2023-12-06 13:48:50', '2023-12-06 13:48:50'),
+(7, 5, 'Judge 05', 'no-avatar.jpg', 'pageant05', 'pageant05', NULL, NULL, NULL, '2023-12-06 13:49:35', '2023-12-06 13:49:46'),
+(8, 6, 'Judge 06', 'no-avatar.jpg', 'pageant06', 'pageant06', NULL, NULL, NULL, '2023-12-06 13:50:11', '2023-12-06 13:50:11'),
+(9, 7, 'Judge 07', 'no-avatar.jpg', 'pageant07', 'pageant07', NULL, NULL, NULL, '2023-12-06 13:50:48', '2023-12-06 13:50:48');
 
 -- --------------------------------------------------------
 
@@ -253,7 +257,19 @@ INSERT INTO `judge_event` (`id`, `judge_id`, `event_id`, `is_chairman`, `created
 (8, 5, 4, 0, '2023-12-03 07:28:49', '2023-12-03 13:47:24'),
 (9, 5, 5, 0, '2023-12-03 07:28:53', '2023-12-03 13:47:26'),
 (10, 1, 2, 0, '2023-12-03 07:32:31', '2023-12-03 13:47:29'),
-(11, 2, 1, 0, '2023-12-03 07:32:40', '2023-12-03 13:47:31');
+(11, 2, 1, 0, '2023-12-03 07:32:40', '2023-12-03 13:47:31'),
+(12, 6, 3, 0, '2023-12-06 14:06:57', '2023-12-06 14:06:57'),
+(13, 6, 4, 0, '2023-12-06 14:07:04', '2023-12-06 14:07:04'),
+(14, 6, 5, 0, '2023-12-06 14:07:09', '2023-12-06 14:07:09'),
+(15, 7, 3, 0, '2023-12-06 14:07:23', '2023-12-06 14:07:23'),
+(16, 7, 4, 0, '2023-12-06 14:07:27', '2023-12-06 14:07:27'),
+(17, 7, 5, 0, '2023-12-06 14:07:31', '2023-12-06 14:07:31'),
+(18, 8, 3, 0, '2023-12-06 14:07:40', '2023-12-06 14:07:40'),
+(19, 8, 4, 0, '2023-12-06 14:07:43', '2023-12-06 14:07:43'),
+(20, 8, 5, 0, '2023-12-06 14:07:47', '2023-12-06 14:07:47'),
+(21, 9, 3, 0, '2023-12-06 14:09:11', '2023-12-06 14:09:11'),
+(22, 9, 4, 0, '2023-12-06 14:09:17', '2023-12-06 14:09:17'),
+(23, 9, 5, 0, '2023-12-06 14:09:29', '2023-12-06 14:09:29');
 
 -- --------------------------------------------------------
 
@@ -668,13 +684,13 @@ ALTER TABLE `events`
 -- AUTO_INCREMENT for table `judges`
 --
 ALTER TABLE `judges`
-  MODIFY `id` tinyint(3) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` tinyint(3) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `judge_event`
 --
 ALTER TABLE `judge_event`
-  MODIFY `id` tinyint(3) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` tinyint(3) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
 -- AUTO_INCREMENT for table `noshows`
