@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 07, 2023 at 07:55 AM
+-- Generation Time: Dec 07, 2023 at 04:47 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -166,6 +166,42 @@ CREATE TABLE `eliminations` (
   `updated_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Dumping data for table `eliminations`
+--
+
+INSERT INTO `eliminations` (`id`, `event_id`, `team_id`, `created_at`, `updated_at`) VALUES
+(1, 1, 2, '2023-12-07 15:46:03', '2023-12-07 15:46:03'),
+(2, 1, 4, '2023-12-07 15:46:04', '2023-12-07 15:46:04'),
+(3, 1, 6, '2023-12-07 15:46:06', '2023-12-07 15:46:06'),
+(4, 1, 8, '2023-12-07 15:46:07', '2023-12-07 15:46:07'),
+(5, 1, 10, '2023-12-07 15:46:08', '2023-12-07 15:46:08'),
+(6, 1, 12, '2023-12-07 15:46:09', '2023-12-07 15:46:09'),
+(7, 2, 2, '2023-12-07 15:46:11', '2023-12-07 15:46:11'),
+(8, 2, 4, '2023-12-07 15:46:12', '2023-12-07 15:46:12'),
+(9, 2, 6, '2023-12-07 15:46:14', '2023-12-07 15:46:14'),
+(10, 2, 8, '2023-12-07 15:46:16', '2023-12-07 15:46:16'),
+(11, 2, 10, '2023-12-07 15:46:17', '2023-12-07 15:46:17'),
+(12, 2, 12, '2023-12-07 15:46:17', '2023-12-07 15:46:17'),
+(13, 3, 2, '2023-12-07 15:46:21', '2023-12-07 15:46:21'),
+(14, 3, 4, '2023-12-07 15:46:23', '2023-12-07 15:46:23'),
+(15, 3, 6, '2023-12-07 15:46:24', '2023-12-07 15:46:24'),
+(16, 3, 8, '2023-12-07 15:46:26', '2023-12-07 15:46:26'),
+(17, 3, 10, '2023-12-07 15:46:27', '2023-12-07 15:46:27'),
+(18, 3, 12, '2023-12-07 15:46:27', '2023-12-07 15:46:27'),
+(19, 4, 2, '2023-12-07 15:46:29', '2023-12-07 15:46:29'),
+(20, 4, 4, '2023-12-07 15:46:30', '2023-12-07 15:46:30'),
+(21, 4, 6, '2023-12-07 15:46:31', '2023-12-07 15:46:31'),
+(22, 4, 8, '2023-12-07 15:46:33', '2023-12-07 15:46:33'),
+(23, 4, 10, '2023-12-07 15:46:34', '2023-12-07 15:46:34'),
+(24, 4, 12, '2023-12-07 15:46:35', '2023-12-07 15:46:35'),
+(25, 5, 2, '2023-12-07 15:46:46', '2023-12-07 15:46:46'),
+(26, 5, 4, '2023-12-07 15:46:47', '2023-12-07 15:46:47'),
+(27, 5, 6, '2023-12-07 15:46:48', '2023-12-07 15:46:48'),
+(28, 5, 8, '2023-12-07 15:46:49', '2023-12-07 15:46:49'),
+(29, 5, 10, '2023-12-07 15:46:50', '2023-12-07 15:46:50'),
+(30, 5, 12, '2023-12-07 15:46:51', '2023-12-07 15:46:51');
+
 -- --------------------------------------------------------
 
 --
@@ -219,7 +255,7 @@ CREATE TABLE `judges` (
 INSERT INTO `judges` (`id`, `number`, `name`, `avatar`, `username`, `password`, `active_portion`, `called_at`, `pinged_at`, `created_at`, `updated_at`) VALUES
 (1, 101, 'Pre Q&A', 'no-avatar.jpg', 'pre02', 'pre02', NULL, NULL, NULL, '2023-04-06 13:58:11', '2023-12-03 13:49:21'),
 (2, 102, 'Online Voting', 'no-avatar.jpg', 'pre01', 'pre01', NULL, NULL, NULL, '2023-04-06 13:58:28', '2023-12-03 13:49:24'),
-(3, 1, 'Judge 01', 'no-avatar.jpg', 'pageant01', 'pageant01', NULL, NULL, NULL, '2023-04-06 13:58:42', '2023-12-03 13:49:27'),
+(3, 1, 'Judge 01', 'no-avatar.jpg', 'pageant01', 'pageant01', NULL, NULL, NULL, '2023-04-06 13:58:42', '2023-12-07 15:45:50'),
 (4, 2, 'Judge 02', 'no-avatar.jpg', 'pageant02', 'pageant02', NULL, NULL, NULL, '2023-12-03 07:26:34', '2023-12-03 08:31:50'),
 (5, 3, 'Judge 03', 'no-avatar.jpg', 'pageant03', 'pageant03', NULL, NULL, NULL, '2023-12-03 07:27:07', '2023-12-03 13:49:40'),
 (6, 4, 'Judge 04', 'no-avatar.jpg', 'pageant04', 'pageant04', NULL, NULL, NULL, '2023-12-06 13:48:50', '2023-12-06 13:48:50'),
@@ -358,17 +394,17 @@ CREATE TABLE `teams` (
 --
 
 INSERT INTO `teams` (`id`, `number`, `name`, `location`, `avatar`, `created_at`, `updated_at`) VALUES
-(1, 1, 'Ericka Bermas', 'Bicol', 'no-avatar.jpg', '2023-12-03 06:43:44', '2023-12-03 13:52:56'),
+(1, 1, 'Erick Anne H. Bermas', 'Bicol', '01-erick-anne-bermas.png', '2023-12-03 06:43:44', '2023-12-07 15:37:20'),
 (2, 2, 'Andrea Ropeta', 'Bicol', 'no-avatar.jpg', '2023-12-03 06:44:03', '2023-12-03 13:53:06'),
-(3, 3, 'Kristel Olive Rejesus', 'Bicol', 'no-avatar.jpg', '2023-12-03 06:44:21', '2023-12-03 13:53:14'),
+(3, 3, 'Kristel Olive N. Rejesus', 'Bicol', '03-kristel-olive-rejesus.png', '2023-12-03 06:44:21', '2023-12-07 15:37:26'),
 (4, 4, 'Abegail Pahingalo', 'Bicol', 'no-avatar.jpg', '2023-12-03 06:44:38', '2023-12-03 13:53:18'),
-(5, 5, 'Jill Lorraine Laniog', 'Bicol', 'no-avatar.jpg', '2023-12-03 06:44:52', '2023-12-03 13:53:24'),
+(5, 5, 'Jill Lorraine N. Laniog', 'Bicol', '05-jill-lorraine-laniog.png', '2023-12-03 06:44:52', '2023-12-07 15:37:33'),
 (6, 6, 'Ashley Hamer', 'Bicol', 'no-avatar.jpg', '2023-12-03 06:45:06', '2023-12-03 13:53:28'),
-(7, 7, 'Sheena Magistrado', 'Bicol', 'no-avatar.jpg', '2023-12-03 06:45:18', '2023-12-03 13:53:33'),
+(7, 7, 'Sheena S. Magistrado', 'Bicol', '07-sheena-magistrado.png', '2023-12-03 06:45:18', '2023-12-07 15:37:39'),
 (8, 8, 'Judy Estefani', 'Bicol', 'no-avatar.jpg', '2023-12-03 06:45:33', '2023-12-03 13:53:37'),
-(9, 9, 'Zandra Nicole Liwanag', 'Bicol', 'no-avatar.jpg', '2023-12-03 06:45:53', '2023-12-03 14:05:31'),
+(9, 9, 'Zandra Nicole L. Liwanag', 'Bicol', '09-zandra-nicole-liwanag.png', '2023-12-03 06:45:53', '2023-12-07 15:37:45'),
 (10, 10, 'Paula Ericka De Jesus', 'Bicol', 'no-avatar.jpg', '2023-12-03 06:46:13', '2023-12-03 14:05:35'),
-(11, 11, 'Shaina Rabacal', 'Bicol', 'no-avatar.jpg', '2023-12-03 06:46:28', '2023-12-03 14:05:38'),
+(11, 11, 'Shaina O. Rabacal', 'Bicol', '11-shaina-rabacal.png', '2023-12-03 06:46:28', '2023-12-07 15:37:50'),
 (12, 12, 'Marivel Melor', 'Bicol', 'no-avatar.jpg', '2023-12-03 06:46:58', '2023-12-03 14:05:43');
 
 -- --------------------------------------------------------
@@ -672,7 +708,7 @@ ALTER TABLE `deductions`
 -- AUTO_INCREMENT for table `eliminations`
 --
 ALTER TABLE `eliminations`
-  MODIFY `id` mediumint(9) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` mediumint(9) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 
 --
 -- AUTO_INCREMENT for table `events`
