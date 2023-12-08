@@ -12,7 +12,7 @@ export default createStore({
 
     state: {
         app: {
-            title: 'Mutya ng PH - Bicol 2023',
+            title: 'Mutya ng Pilipinas - Bicol 2023',
             org: 'ACLC College Iriga',
             backendDir: 'app',
             sideNav: false
@@ -21,7 +21,7 @@ export default createStore({
             height: 0
         },
         rating: {
-            min: 70,
+            min: 50,
             max: 100
         },
         deduction: {
